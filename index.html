@@ -11,25 +11,26 @@
 
 <body>
 	<header>
-		<h1>LOVE Ukraine <br>Туристична фірма</h1>
-			<nav>
-				<div>
-					<a href="index.html">
-						<p><b>Домашня сторінка</b></p>
-					</a>
-					<a href="excursions.html">
-						<p><b>Гарячі Пропозиції</b></p>
-					</a>
+		<nav>
+			<h1 class="logo">LOVE Ukraine <br><span>
+          Туристична фірма</span> </h1>
+			<ul class="top-menu">
+				<li><a href="index.html">Домашня сторінка</a></li>
+				<li><a href="excursions.html">Гарячі Пропозиції</a></li>
+				<li><a href="#contacts">Контакти</a></li>
+				<li>
 					<form action="/action_page.php">
 						<label for="gsearch">Пошук:</label>
 						<input type="search" id="gsearch" name="gsearch" value="пошук">
-            </form>
-				</div>
-			</nav>
+                    </form>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	<main>
-		<img src="img/mountains.jpg" alt="панорама гірських вершин">
-		<div> <a href="active_rest.html">
+		<div class="banner">
+			<img src="img/mountains.jpg" alt="панорама гірських вершин">
+			<a href="active_rest.html">
 				<p><b>Активний відпочинок</b></p>
 			</a>
 			<a href="beach_vacations.html">
@@ -132,7 +133,7 @@
 			</form>
 		</div>
 		<div>
-			<p><b>Наші контакти</b></p>
+			<h2 id="contacts">Наші контакти</h2>
 			<ul>
 				<li> <img src="img/tel.png" alt="телефон">+38099 555 1 555</li>
 				<li> <img src="img/mail.png" alt="пошта">travelukr@ukr.net</li>
