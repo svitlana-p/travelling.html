@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet') ;
 :root {
    font-family: 'Roboto', sans-serif;
     --main-color: black;
     --accent-color: gray;
     --background-color: #d4e3fc;
     scroll-behavior: smooth;
-
 }
+
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -77,17 +77,17 @@ main .banner {
    
      
 }
-   @media (min-width: 500px) {
+@media (min-width: 500px) {
     main .banner {
          display: grid; 
          justify-content: space-between;  
-         grid-template-columns: 1fr; 
+         grid-template-columns:1fr; 
           }
    }
 
 @media (min-width: 660px) {
     main .banner {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
             }
 }
 
@@ -103,7 +103,7 @@ main .banner a {
     text-decoration: none;
     text-align: center;
     }
-    main .banner p:hover {
+main .banner p:hover {
   background-color: #c5e0e9;
   cursor: pointer;
 }
@@ -118,25 +118,25 @@ article {
   height: 250px;
   background-color: #f0f4f5;
  }
- main .services-list .service-card img.service-image {
+main .services-list .service-card img.service-image {
     display: block;
     width: 100%;
     }
 main .services-list .service-card img.service-image {
-     display: flex;
+    display: flex;
     justify-content: space-around;
 }
 
 @media (min-width: 660px) {
     main .services-list {
         display: grid; 
-        grid-template-columns:1fr, 1fr;  
+        grid-template-columns: 1fr 1fr;  
         grid-gap: 5px; 
 }
 
 @media (min-width: 500px) {
     main .services-list {
-        grid-template-columns:1fr;  
+        grid-template-columns: 1fr;  
     }
 }
 }
