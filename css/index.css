@@ -96,6 +96,7 @@ main .banner {
 main .banner a {
     background-color: var(--background-color);
     border: 1px solid #000000;
+    border-radius: 0.19em;
     color: gray;
     padding: 10px;
     width: 200px;
@@ -104,18 +105,17 @@ main .banner a {
     text-decoration: none;
     text-align: center;
     }
-main .banner p:hover {
-  background-color: #c5e0e9;
+main .banner a:hover {
+  background-color: #72b6cc;
   cursor: pointer;
 }
 
-main .banner p:active {
+main .banner a:active {
   box-shadow: none;
   top: 5px;
 }
 article {
   position: relative;
-  width: 980px;
   height: 250px;
   background-color: #f0f4f5;
 }
@@ -146,7 +146,7 @@ main .services-list .service-card img.service-image {
     main .services-list {
         display: grid; 
         grid-template-columns: 1fr;  
-        grid-gap: 5px; }
+        grid-gap: 25px; }
 }
 
 @media (min-width: 650px) {
@@ -156,21 +156,21 @@ main .services-list .service-card img.service-image {
 }
 main .services-list .service-card a {
     background-color: var(--background-color);
-    border: 1px solid #000000;
-    color: gray;
-    padding: 10px;
-    width: 200px;
-    height: 20px;
-    position: relative;
+    color: #484a4b;
+    border: thin solid black;
+    border-radius: 0.12em;
+    padding: 0px 3px 3px 3px;
+    margin: 0px;
     text-decoration: none;
     text-align: center;
-    }
-main .banner p:hover {
-  background-color: #c5e0e9;
+        }
+    
+main .services-list .service-card a:hover {
+  background-color: white;
   cursor: pointer;
 }
 
-main .banner p:active {
+main .services-list .service-card a:active {
   box-shadow: none;
   top: 5px;
 }
