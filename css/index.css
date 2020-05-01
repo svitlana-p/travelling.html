@@ -80,9 +80,10 @@ main .banner {
 @media (min-width: 500px) {
     main .banner {
          display: grid; 
-         justify-content: space-between;  
+         justify-items: start;  
          grid-template-columns:1fr; 
           }
+    
    }
 
 @media (min-width: 660px) {
@@ -117,26 +118,59 @@ article {
   width: 980px;
   height: 250px;
   background-color: #f0f4f5;
- }
-main .services-list .service-card img.service-image {
-    display: block;
-    width: 100%;
+}
+@media (min-width: 500px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media (min-width: 650px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 main .services-list .service-card img.service-image {
-    display: flex;
-    justify-content: space-around;
+  display: block;
+  width: 100%;
+      }
+.service-card h2 {
+  display: flex;
+  align-items: center; 
+  position: relative;
+  width: 450px;
+  height: 100px;
 }
-
-@media (min-width: 660px) {
-    main .services-list {
-        display: grid; 
-        grid-template-columns: 1fr 1fr;  
-        grid-gap: 5px; 
-}
-
 @media (min-width: 500px) {
     main .services-list {
+        display: grid; 
         grid-template-columns: 1fr;  
+        grid-gap: 5px; }
+}
+
+@media (min-width: 650px) {
+    body main .services-list {
+        grid-template-columns: 1fr 1fr;  
     }
 }
+main .services-list .service-card a {
+    background-color: var(--background-color);
+    border: 1px solid #000000;
+    color: gray;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    }
+main .banner p:hover {
+  background-color: #c5e0e9;
+  cursor: pointer;
+}
+
+main .banner p:active {
+  box-shadow: none;
+  top: 5px;
 }
