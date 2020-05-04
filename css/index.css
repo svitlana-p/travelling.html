@@ -19,6 +19,7 @@ body {
 h1
 {
     color: red;
+    text-align: center
 }
  h2 {
   font-size: 2rem;
@@ -30,8 +31,9 @@ header nav .logo  {
     font-family: 'Roboto', cursive;
     font-size: 2rem;
     font-style: italic;
-    text-align: left;
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     
             }
 span {
@@ -39,60 +41,58 @@ span {
     font-size: 1rem;
     text-align: center;
 }
+@media (min-width: 500px) {
+    header nav .logo{
+    justify-items: flex-start;
+    }
+}
+
 header nav .top-menu {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    padding: 27px;
+    flex-wrap: wrap;
+    padding: 19px;
     background-color: var(--background-color);
     margin: 1px;
     }
+    
 header nav .top-menu li a  {  
     color: var(--main-color);
     text-decoration: none;
     border: 1px solid transparent;
-    padding: 5px;
-}
+    padding: 0px;
+   }
+
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color);
-
 }
 @media (min-width: 500px) {
     header nav {
         display: flex;
         align-items: center;
-        
-    }
-
-    header nav .top-menu {
-        flex: 1;
-        margin: 0;
-           }
+               }
 }
+@media (min-width: 660px) {
+header nav  {
+    justify-content: space-between;
+}
+
+}
+
 main .banner {
     background-image: url(../img/mountains.jpg);
     min-height: 400px;
     background-position: center;
     background-size: cover;
-   
-     
-}
-@media (min-width: 500px) {
-    main .banner {
-         display: grid; 
-         justify-items: start;  
-         grid-template-columns:1fr; 
-          }
-    
-   }
-
-@media (min-width: 660px) {
-    main .banner {
-        grid-template-columns:1fr 1fr;
-            }
-}
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  main .banner .end-button {
+      margin-bottom: 150px;
+  }
 main .banner a {
     background-color: var(--background-color);
     border: 1px solid #000000;
@@ -104,7 +104,8 @@ main .banner a {
     position: relative;
     text-decoration: none;
     text-align: center;
-    }
+       }
+
 main .banner a:hover {
   background-color: #72b6cc;
   cursor: pointer;
@@ -114,63 +115,14 @@ main .banner a:active {
   box-shadow: none;
   top: 5px;
 }
-article {
-  position: relative;
-  height: 250px;
-  background-color: #f0f4f5;
-}
-@media (min-width: 500px) {
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    @media (min-width: 650px) {
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-main .services-list .service-card img.service-image {
-  display: block;
-  width: 100%;
-      }
-.service-card h2 {
-  display: flex;
-  align-items: center; 
-  position: relative;
-  width: 450px;
-  height: 100px;
-}
-@media (min-width: 500px) {
-    main .services-list {
-        display: grid; 
-        grid-template-columns: 1fr;  
-        grid-gap: 25px; }
-}
 
-@media (min-width: 650px) {
-    body main .services-list {
-        grid-template-columns: 1fr 1fr;  
-    }
-}
-main .services-list .service-card a {
-    background-color: var(--background-color);
-    color: #484a4b;
-    border: thin solid black;
-    border-radius: 0.12em;
-    padding: 0px 3px 3px 3px;
-    margin: 0px;
-    text-decoration: none;
-    text-align: center;
-        }
+@media (min-width: 500px) {
+    main .banner {
+         display: grid; 
+         grid-template-columns:1fr 1fr; 
+         align-items: center;
+          }
     
-main .services-list .service-card a:hover {
-  background-color: white;
-  cursor: pointer;
-}
+   }
 
-main .services-list .service-card a:active {
-  box-shadow: none;
-  top: 5px;
-}
+
