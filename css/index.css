@@ -124,5 +124,67 @@ main .banner a:active {
           }
     
    }
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+main .services-list .service-card img.service-image {
+  display: block;
+  width: 100%;
+      }
+.service-card h2 {
+  display: flex;
+  align-items: center; 
+  position: relative;
+  height: 100px;
+}
+
+.services-list {
+        display: grid; 
+        grid-template-columns: 1fr;  
+        grid-gap: 25px; }
 
 
+@media (min-width: 500px) {
+ .services-list {
+        grid-template-columns: 1fr 1fr;  
+    }
+    
+}
+main .services-list .service-card p {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+main .services-list .service-card a {
+    background-color: var(--background-color);
+    color: #484a4b;
+    border: thin solid black;
+    border-radius: 0.12em;
+    padding: 0px 3px 3px 3px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+            }
+    
+main .services-list .service-card a:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+main .services-list .service-card a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+.propose p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+   
+}
