@@ -29,18 +29,18 @@
 	<main>
 		<div class="banner">
 			<p><a href="active_rest.html">
-				Активний відпочинок
-			</a></p>
+					Активний відпочинок
+				</a></p>
 
-			<p style="justify-self: end;"><a  href="beach_vacations.html">
-				Пляжний відпочинок
-			</a></p>
-			<p><a href="excursions.html">
-				Екскурсії
-			</a></p>
+			<p style="justify-self: end;"><a href="beach_vacations.html">
+					Пляжний відпочинок
+				</a></p>
+			<p class="pre-end-button"><a href="excursions.html">
+					Екскурсії
+				</a></p>
 			<p class="end-button" style="justify-self: end;"><a href="green_tourism.html">
-				Зелений туризм
-			</a></p>
+					Зелений туризм
+				</a></p>
 		</div>
 		<article>
 			<h2>Подорожуй Україною!<br> <span>
@@ -108,14 +108,16 @@
 				<details>
 					<summary>Більше інформації</summary>
 					<p>Неподалік від Херсона є дивне і водночас прекрасне озеро. Воно абсолютно рожеве. Вчені вважають,
-						що це ніщо інше, як залишки доісторичного лемурійського моря. Час від часу вода з водойми відступає і
-						лишає по собі унікальний пляж із чистої рожевої солі. Це озеро тут називають українським мертвим морем.
+						що це ніщо інше, як залишки доісторичного лемурійського моря. Час від часу вода з водойми
+						відступає і
+						лишає по собі унікальний пляж із чистої рожевої солі. Це озеро тут називають українським мертвим
+						морем.
 					</p>
 				</details>
 				<img class="service-image" src="img/lake.jpg" alt="Рожеве озеро">
 				<p><a href="beach_vacations.html">
-					Дізнатись більше
-				</a></p>
+						Дізнатись більше
+					</a></p>
 			</div>
 		</div>
 		<div>
@@ -123,44 +125,44 @@
 				<p>Ексклюзивні пропозиції тільки для наших підписників!</p>
 				<label for="email">Ваша email адреса:</label>
 				<input type="email" id="email" name="email">
-				<button  type="button" onclick="alert('Дякуємо')">Підписатись</button>
+				<button  type="button">Підписатись</button>
 				<p>Залишились запитання?</p>
 				<p>Залиште свій номер телефону і наш менеджер зв'яжеться з вами!</p>
 				<label for="phone">Ваш номер телефону:</label>
 				<input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{12}">
-				<button  type="button" onclick="alert('Дякуємо')">Передзвоніть мені!</button>
+				<button  type="button">Передзвоніть мені!</button>
 			</form>
 		</div>
-		<div>
-			<h2 id="contacts">Наші контакти</h2>
-			<ul>
-				<li> <img src="img/tel.png" alt="телефон">+38099 555 1 555</li>
-				<li> <img src="img/mail.png" alt="пошта">travelukr@ukr.net</li>
-				<li> <img src="img/gps.png" alt="адреса на карті">м. Львів вул. Соборна 43/8</li>
-			</ul>
-			<div><iframe width="300" height="150"
-					src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=43%20Soborna%20str%20Lviv%2C%20Ukraine+(Lviv)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>
-			</div><br>
-		</div>
-			<div>
-				<p><b>Години роботи нашого офісу:</b></p>
-				<p>Пн-Пт: з 10-00 до 19-00</p>
-				<p>Сб: з 11-00 до 16-00</p>
-				<p>Неділя - вихідний</p>
-			</div>
-			<div>
+		<section class="contactInfo">
+			<div class="contactUs">
 				<form action="https://formspree.io/xoqngoly" method="POST">
-					<p>Зв'яжіться з нами</p>
+					<h2>Зв'яжіться з нами</h2>
 					<p>Ми підберемо найкращий варіант відпочинку, саме для Вас</p>
-					<label for="name">Ваше ім'я:</label><br>
-					<input type="text" id="name" name="name" value="Ваше ім'я"><br>
-					<label for="mail">Email:</label><br>
-					<input type="text" id="mail" name="email" value="Email"><br>
-					<p>Текст повідомлення:</p>
-					<textarea name="comment" cols="40" rows="10">Текст повідомлення</textarea><br>
-					<input type="submit" value="Відправити">
+					<label for="name"></label><br>
+					<input class="text-field" type="text" id="name" name="name" value="Ваше ім'я"><br>
+					<label for="mail"></label><br>
+					<input class="text-field" type="text" id="mail" name="email" value="Email"><br>
+					<textarea class="text-field" name="comment" cols="40" rows="10">Текст повідомлення</textarea><br>
+					<input class="text-field" type="submit" value="Відправити"> <br>
 </form>
 			</div>
+			<div class="ourContacts">
+				<h2 id="contacts">Наші контакти</h2>
+				<ul>
+					<li> <img src="img/tel.png" alt="телефон">+38099 555 1 555</li>
+					<li> <img src="img/mail.png" alt="пошта">travelukr@ukr.net</li>
+					<li> <img src="img/gps.png" alt="адреса на карті">м. Львів вул. Соборна 43/8</li>
+				</ul>
+				<div><iframe width="300" height="150"
+						src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=43%20Soborna%20str%20Lviv%2C%20Ukraine+(Lviv)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>
+					<br>
+					<p class="hours">Години роботи нашого офісу:</p>
+					<p>Пн-Пт: з 10-00 до 19-00</p>
+					<p>Сб: з 11-00 до 16-00</p>
+					<p>Неділя - вихідний</p>
+				</div>
+			</div>
+		</section>
 	</main>
 	<hr>
 	<footer>

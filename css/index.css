@@ -122,7 +122,9 @@ main .banner a:active {
          grid-template-columns:1fr 1fr; 
          align-items: center;
           }
-    
+    .pre-end-button {
+       margin-bottom: 150px; 
+    }
    }
 article {
   position: relative;
@@ -151,15 +153,14 @@ main .services-list .service-card img.service-image {
 @media (min-width: 500px) {
  .services-list {
         grid-template-columns: 1fr 1fr;  
+            }
     }
-    
-}
 main .services-list .service-card p {
     margin: 10px;
     display: flex;
     justify-content: center;
 }
-main .services-list .service-card a {
+main .services-list .service-card a, .propose button {
     background-color: var(--background-color);
     color: #484a4b;
     border: thin solid black;
@@ -179,12 +180,72 @@ main .services-list .service-card a:active {
   box-shadow: none;
   top: 5px;
 }
-
+ @media (min-width: 500px) {
+     main .service-card h2 {
+         font-size: 18px;
+     }
+ }
+  @media (min-width: 660px) {
+     main .service-card h2 {
+         font-size: 2rem;
+     }
+ }
 .propose p {
     font-size: 18px;
     font-weight: bold;
+    font-style: italic;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.propose label, input {
+    font-size: 16px;
+    text-align: center;   
+    margin: 15px;
+}
+.propose button {
+    padding: 5px;
+    margin: 10px;
+    
+}
+.propose input {
+       padding: 0px 3px 3px 3px;
+       
+}
+.contactUs .text-field, .contactUs p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.contactUs p, .hours {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-   
+.ourContacts {
+    background-color: #d3e8f3;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.ourContacts p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+@media (min-width: 660px) {
+    .contactInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        grid-gap: 25px; }
+    }
+.ourContacts {
+     background-color: white;
+    border:none;
+}
 }
