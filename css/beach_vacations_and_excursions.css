@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet') ;
+:root {
+   font-family: 'Roboto', sans-serif;
+   --background-color: #d4e3fc;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+  }
+.infobox {
+    font-size: 18px;
+    margin: 40px 15px;
+}  
+.btn  {
+   background-color: var(--background-color);
+   color : gray;
+}
+
+
+.resbut {
+   display: flex;
+   justify-content: center;
+   margin: 40px 0px;
+}
+.reserve {
+    background-color: var(--background-color);
+    border: 1px solid #000000;
+    border-radius: 0.19em;
+    width: 200px;
+    color: gray;
+    padding: 10px;
+    text-align: center; 
+       }
+
+.reserve:hover, .btn:hover{
+  background-color: #72b6cc;
+  cursor: pointer;
+  color: white;
+}
+
+.reserve:active {
+  box-shadow: none;
+  top: 5px;
+}
+h3 {
+    margin: 30px;
+    padding: 0;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+  }
+  #carouselResponces {
+      background-color: rgb(211, 205, 205);
+      text-align: center
+  }
