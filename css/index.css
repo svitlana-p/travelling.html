@@ -106,7 +106,7 @@ main .banner a {
     text-align: center;
        }
 
-main .banner a:hover {
+main .banner a:hover , .text-field:hover, .propBut:hover {
   background-color: #72b6cc;
   cursor: pointer;
 }
@@ -211,6 +211,7 @@ main .services-list .service-card a:active {
     padding: 0px 3px 3px 3px;
        
 }
+
 .contactUs .text-field, .contactUs p{
     display: flex;
     flex-direction: column;
@@ -254,4 +255,18 @@ main .services-list .service-card a:active {
     background-color: white;
     border:none;
 }
+}
+.weatherTitle p {
+    font: 204px;
+}
+.weather {
+    background-color: rgb(203, 204, 204);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font: 24px sans-serif;
+    color: rgba(204, 0, 0, 0.692);
+    
+    text-decoration-color: black
 }
