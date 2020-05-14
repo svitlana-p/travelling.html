@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 
-h1, h2, p, ul {
+h1, h2, p, ul, hr {
     margin: 0;
     padding: 0;
 }
@@ -51,8 +51,9 @@ header nav .top-menu {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 19px;
+    padding: 10px;
     background-color: var(--background-color);
     margin: 1px;
     }
@@ -160,7 +161,7 @@ main .services-list .service-card p {
     display: flex;
     justify-content: center;
 }
-main .services-list .service-card a, .propose button {
+main .services-list .service-card a, .propose button, .text-field {
     background-color: var(--background-color);
     color: #484a4b;
     border: thin solid black;
@@ -195,10 +196,7 @@ main .services-list .service-card a:active {
     font-weight: bold;
     font-style: italic;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    text-align: center
 }
 .propose label, input {
     font-size: 16px;
@@ -207,11 +205,11 @@ main .services-list .service-card a:active {
 }
 .propose button {
     padding: 5px;
-    margin: 10px;
-    
+    margin: 10px 30px 10px 30px;
+    text-align: center;   
 }
 .propose input {
-       padding: 0px 3px 3px 3px;
+    padding: 0px 3px 3px 3px;
        
 }
 .contactUs .text-field, .contactUs p{
@@ -219,6 +217,7 @@ main .services-list .service-card a:active {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    text-align: center
 }
 .contactUs p, .hours {
     font-size: 18px;
@@ -233,6 +232,9 @@ main .services-list .service-card a:active {
     flex-direction: column;
     align-items: center;
  }
+  .cont {
+     margin: 8px;
+ }
 .ourContacts p {
   display: flex;
   flex-direction: column;
@@ -242,10 +244,15 @@ main .services-list .service-card a:active {
     .contactInfo {
         display: grid;
         grid-template-columns: 1fr 1fr;  
-        grid-gap: 25px; }
+        grid-gap: 25px; 
+        text-align: center;
+        }
     }
-.ourContacts {
-     background-color: white;
+
+
+@media (min-width: 660px) {
+    .ourContacts {
+    background-color: white;
     border:none;
 }
 }
