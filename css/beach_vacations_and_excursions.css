@@ -19,7 +19,7 @@ h2 {
     font-size: 18px;
     margin: 40px 15px;
 }  
-.btn  {
+.btn, .addResponses {
    background-color: var(--background-color);
    color : gray;
 }
@@ -28,7 +28,7 @@ h2 {
    justify-content: center;
    margin: 40px 0px;
 }
-.reserve {
+.reserve, .addResponses {
     background-color: var(--background-color);
     border: 1px solid #000000;
     border-radius: 0.19em;
@@ -38,7 +38,7 @@ h2 {
     text-align: center; 
 }
 
-.reserve:hover, .btn:hover{
+.reserve:hover, .btn:hover, .addResponses:hover{
   background-color: #72b6cc;
   cursor: pointer;
   color: white;
@@ -58,4 +58,10 @@ h3 {
   #carouselResponces {
       background-color: rgb(211, 205, 205);
       text-align: center
+}
+.addResponses {
+    margin: 20px;
+}
+.addedResp {
+    font-size: 18px;
 }
