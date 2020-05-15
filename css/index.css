@@ -24,7 +24,7 @@ h1 {
   font-size: 2rem;
   font-style: italic;
   text-align: center;
- }
+}
 
 header nav .logo  {
     font-family: 'Roboto', cursive;
@@ -34,7 +34,7 @@ header nav .logo  {
     flex-direction: column;
     justify-items: center;
     
-            }
+}
 span {
     color: var(--main-color);
     font-size: 1rem;
@@ -55,14 +55,14 @@ header nav .top-menu {
     padding: 10px;
     background-color: var(--background-color);
     margin: 1px;
-    }
+}
     
 header nav .top-menu li a  {  
     color: var(--main-color);
     text-decoration: none;
     border: 1px solid transparent;
     padding: 0px;
-   }
+}
 
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color);
@@ -71,13 +71,12 @@ header nav .top-menu li a:hover {
     header nav {
         display: flex;
         align-items: center;
-               }
+    }
 }
 @media (min-width: 660px) {
-header nav  {
-    justify-content: space-between;
-}
-
+    header nav  {
+        justify-content: space-between;
+    }
 }
 
 main .banner {
@@ -89,10 +88,10 @@ main .banner {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-  }
+}
   main .banner .end-button {
       margin-bottom: 150px;
-  }
+}
 main .banner a {
     background-color: var(--background-color);
     border: 1px solid #000000;
@@ -104,7 +103,7 @@ main .banner a {
     position: relative;
     text-decoration: none;
     text-align: center;
-       }
+}
 
 main .banner a:hover , .text-field:hover, .propBut:hover {
   background-color: #72b6cc;
@@ -121,11 +120,11 @@ main .banner a:active {
          display: grid; 
          grid-template-columns:1fr 1fr; 
          align-items: center;
-          }
+    }
     .pre-end-button {
        margin-bottom: 150px; 
     }
-   }
+}
 article {
   position: relative;
   display: flex;
@@ -136,7 +135,7 @@ article {
 main .services-list .service-card img.service-image {
   display: block;
   width: 100%;
-      }
+}
 .service-card h2 {
   display: flex;
   align-items: center; 
@@ -147,14 +146,14 @@ main .services-list .service-card img.service-image {
 .services-list {
         display: grid; 
         grid-template-columns: 1fr;  
-        grid-gap: 25px; }
-
+        grid-gap: 25px; 
+}
 
 @media (min-width: 500px) {
  .services-list {
         grid-template-columns: 1fr 1fr;  
-            }
     }
+}
 main .services-list .service-card p {
     margin: 10px;
     display: flex;
@@ -169,7 +168,7 @@ main .services-list .service-card a, .propose button, .text-field {
     margin: 0px;
     text-decoration: none;
     text-align: center;
-            }
+}
     
 main .services-list .service-card a:hover {
   background-color: white;
@@ -183,13 +182,13 @@ main .services-list .service-card a:active {
  @media (min-width: 500px) {
      main .service-card h2 {
          font-size: 18px;
-     }
- }
+    }
+}
   @media (min-width: 660px) {
      main .service-card h2 {
          font-size: 2rem;
-     }
- }
+    }
+}
 .propose p {
     font-size: 18px;
     font-weight: bold;
@@ -231,10 +230,10 @@ main .services-list .service-card a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+}
   .cont {
      margin: 8px;
- }
+}
 .ourContacts p {
   display: flex;
   flex-direction: column;
@@ -246,15 +245,15 @@ main .services-list .service-card a:active {
         grid-template-columns: 1fr 1fr;  
         grid-gap: 25px; 
         text-align: center;
-        }
     }
+}
 
 
 @media (min-width: 660px) {
     .ourContacts {
     background-color: white;
     border:none;
-}
+    }
 }
 .weatherTitle p {
     font: 204px;
@@ -267,6 +266,5 @@ main .services-list .service-card a:active {
     flex-wrap: wrap;
     font: 24px sans-serif;
     color: rgba(204, 0, 0, 0.692);
-    
     text-decoration-color: black
 }

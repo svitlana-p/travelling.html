@@ -24,15 +24,13 @@
 						<a class="nav-link" href="index.html">Домашня сторінка<span class="sr-only"></span></a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						<a class="nav-link dropdown-toggle" href="excursions.html" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Розділи сайту
+							Екскурсії
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="beach_vacations.html">Пляжний відпочинок</a>
-							<a class="dropdown-item" href="active_rest.html">Активний відпочинок</a>
-							<a class="dropdown-item" href="excursions.html">Екскурсії</a>
-							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="active_rest.html">Активний відпочинок</a>							
 							<a class="dropdown-item" href="green_tourism.html">Зелений туризм</a>
 						</div>
 					</li>
@@ -140,11 +138,37 @@
 							</tr>
 						</tbody>
 					</table>
-
-					<div class="resbut">
-						<button class="reserve" type="button" >Забронювати</button>
+                    <div class="resbut">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Забронювати</button></div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Оформлення замовлення:</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                     </button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="recipient-name" class="col-form-label">Ваша електронна адреса:</label>
+											<input type="text" class="form-control" id="recipient-name">
+                                        </div>
+											<div class="form-group">
+												<label for="message-text" class="col-form-label">Опишіть, будь ласка, який тур ви обрали, та вкажіть бажані дати поїздки:</label>
+												<textarea class="form-control" id="message-text"></textarea>
+											</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+									<button id="sendToCompany" type="button" class="btn btn-primary">Відправити</button>
+								</div>
+							</div>
+						</div>
 					</div>
-
 					<h3>Наші туристи</h3>
 					<div id="carouselTourists" class="carousel slide carousel-fade" data-ride="carousel">
 						<div class="carousel-inner">
@@ -211,6 +235,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
+    <script src="js/excursions.js"></script>
 </body>
 
 </html>
