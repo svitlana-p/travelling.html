@@ -71,3 +71,20 @@ h3 {
     text-align: center;
     margin: 10px;
 }
+#form-status, #my-form-status {
+    font-size: 2rem;
+    color: red;
+}
+.text-field {
+    color: rgba(128, 128, 128, 0.829);
+}
+.weather {
+    background-color: rgb(250, 192, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font: 24px sans-serif;
+    color: rgba(68, 66, 66, 0.692);
+    text-decoration-color: black
+}

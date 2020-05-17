@@ -105,7 +105,7 @@ main .banner a {
     text-align: center;
 }
 
-main .banner a:hover , .text-field:hover, .propBut:hover, #submit:hover  {
+main .banner a:hover , .propBut:hover, #submit:hover  {
   background-color: #72b6cc;
   cursor: pointer;
 }
@@ -255,8 +255,8 @@ main .services-list .service-card a:active {
     border:none;
     }
 }
-.weatherTitle p {
-    font: 204px;
+.weatherTitle {
+     background-color: rgb(203, 204, 204);
 }
 .weather {
     background-color: rgb(203, 204, 204);
@@ -267,4 +267,24 @@ main .services-list .service-card a:active {
     font: 24px sans-serif;
     color: rgba(204, 0, 0, 0.692);
     text-decoration-color: black
+}
+.timer-text {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;  
+}
+.timerBack {
+    background-image: url(../img/summer_party.jpg);
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color:red;      
+}
+.timer {
+    margin: 30px;
+    color: black
 }

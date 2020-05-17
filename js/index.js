@@ -27,4 +27,34 @@ fetch(
   })
   .catch(function () {});
 
+const timerShow = document.querySelector(".timer");
+function subTime(dateCurrent, dateEnd) {
+  return dateEnd - dateCurrent;
+}
 
+const endDate = {
+  fullYear: "2020",
+  month: "06",
+  day: "01",
+  hours: "00",
+  minutes: "00",
+  seconds: "00",
+};
+
+let endDateStr = `${endDate.fullYear}-${endDate.month}-${endDate.day}T${endDate.hours}:${endDate.minutes}:${endDate.seconds}`;
+
+timer = setInterval(function () {
+  const now = new Date();
+  const date = new Date(endDateStr);
+  const timeLeft = subTime(now, date);
+  if (timeLeft <= 0) {
+    clearInterval(timer);
+    alert("Час вийшов!");
+  } else {
+    const res = new Date(timeLeft);
+    const timerStr = `${res.getUTCMonth()} місяців ${
+      res.getUTCDate() - 1
+    } днів ${res.getUTCHours()}:${res.getUTCMinutes()}:${res.getUTCSeconds()}`;
+    timerShow.innerHTML = timerStr;
+  }
+}, 1000);

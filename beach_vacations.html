@@ -71,6 +71,13 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
+                    <h2>Прогноз погоди</h2>
+					<div class="weather">
+						<div class="weatherCity"></div>
+						<div class="weatherForecast"></div>
+						<div class="weatherDesc"></div>
+						<div class="weatherIcon"></div>
+					</div>
 					<p class="infobox">За 100 кілометрів від Херсона, поблизу села Григорівка, в одній із бухт затоки
 						Сиваш
 						знаходиться
@@ -216,18 +223,18 @@
 									<span class="sr-only">Next</span>
 								</a>
 							</div>
-
 						</div>
 						<div class="addResponces">
-                        <p class="respTitle">Ваша думка важлива!<br>Напишіть свій відгук і ми його опублікуємо!</p>
-							<form id="resp-form" action="https://formspree.io/xoqngoly" method="POST">
-								<textarea class="text-field" name="responce" cols="40" ></textarea>
-                                <label for="resp"></label>
-                                <div class="buttonAddResp">
-								<input id="resp" type="submit" class="addResp" value="Додати відгук">
+							<p class="respTitle">Ваша думка важлива!<br>Напишіть свій відгук і ми його опублікуємо!</p>
+								<form id="resp-form" action="https://formspree.io/xoqngoly" method="POST">
+									<textarea class="text-field" name="name" cols="40"> Ваше ім'я:</textarea><br>
+									<textarea class="text-field" name="responce" cols="40">Ваш відгук:</textarea>
+									<label for="resp"></label>
+									<div class="buttonAddResp">
+										<input id="resp" type="submit" class="addResp" value="Додати відгук">
                                 </div>
-                                <p id="form-status"></p>
-                        </form>
+										<p id="form-status"></p>
+								</form>
 						</div>
 						<div class="addedResp"></div>
 	</main>
