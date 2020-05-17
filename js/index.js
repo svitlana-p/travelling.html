@@ -1,7 +1,7 @@
 const propButton = document.getElementById("prop");
 propButton.addEventListener("click", propPressed);
 function propPressed() {
-  alert("Дякую!");
+  alert("Дякуємо!");
 }
 const callButton = document.getElementById("callback");
 callButton.addEventListener("click", callPressed);

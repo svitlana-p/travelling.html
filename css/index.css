@@ -105,7 +105,7 @@ main .banner a {
     text-align: center;
 }
 
-main .banner a:hover , .text-field:hover, .propBut:hover {
+main .banner a:hover , .text-field:hover, .propBut:hover, #submit:hover  {
   background-color: #72b6cc;
   cursor: pointer;
 }
@@ -159,7 +159,7 @@ main .services-list .service-card p {
     display: flex;
     justify-content: center;
 }
-main .services-list .service-card a, .propose button, .text-field {
+main .services-list .service-card a, .propose button, #submit {
     background-color: var(--background-color);
     color: #484a4b;
     border: thin solid black;
@@ -170,7 +170,7 @@ main .services-list .service-card a, .propose button, .text-field {
     text-align: center;
 }
     
-main .services-list .service-card a:hover {
+main .services-list .service-card a:hover{
   background-color: white;
   cursor: pointer;
 }
@@ -211,7 +211,7 @@ main .services-list .service-card a:active {
        
 }
 
-.contactUs .text-field, .contactUs p{
+.contactUs .text-field, .contactUs p, #submit{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -130,16 +130,16 @@
 			</div>
 		</div>
 		<div>
-			<form class="propose">
+			<form action="https://formspree.io/xoqngoly" method="POST" class="propose">
 				<p>Ексклюзивні пропозиції тільки для наших підписників!</p>
 				<label for="email">Ваша email адреса:</label>
 				<input type="email" id="email" name="email">
-				<button id="prop" class="propBut" type="button">Підписатись</button>
+				<button id="prop" class="propBut" type="submit">Підписатись</button>
 				<p>Залишились запитання?</p>
 				<p>Залиште свій номер телефону і наш менеджер зв'яжеться з вами!</p>
 				<label for="phone">Ваш номер телефону:</label>
 				<input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{12}">
-				<button id="callback" class="propBut" type="button">Передзвоніть мені!</button>
+				<button id="callback" class="propBut" type="submit">Передзвоніть мені!</button>
 			</form>
 		</div>
 		<section class="contactInfo">
@@ -152,7 +152,7 @@
 					<label for="mail"></label><br>
 					<input class="text-field" type="text" id="mail" name="email" value="Email"><br>
 					<textarea class="text-field" name="comment" cols="40" >Текст повідомлення</textarea><br>
-					<input class="text-field" type="submit" value="Відправити"> <br>
+					<input id="submit" class="text-field" type="submit" value="Відправити"> <br>
                 </form>
 			</div>
 			<div class="ourContacts">
