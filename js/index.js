@@ -14,8 +14,7 @@ fetch(
   .then(function (resp) {
     return resp.json();
   })
-  .then(function (data) {
-    console.log(data);
+  .then(function (data) {    
     document.querySelector(".weatherCity").textContent = data.city.name;
     document.querySelector(".weatherForecast").innerHTML =
       Math.round(data.list[0].main.temp - 273) + "&deg;";
@@ -58,3 +57,8 @@ timer = setInterval(function () {
     timerShow.innerHTML = timerStr;
   }
 }, 1000);
+
+const someQuestions = function (){
+alert('Залишилися запитання? Телефонуйте!\n+38 099 123 4 567\nМи радо вас проконсультуємо! \nАбо заповнюйте форму зворотнього зв\'язку,\nщо знаходиться внизу сторінки\nі ми вам передзвонимо!')
+};    
+const timeOut = setTimeout(someQuestions, 10000);
