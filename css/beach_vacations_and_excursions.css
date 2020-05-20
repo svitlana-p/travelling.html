@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet') ;
+:root {
+   font-family: 'Roboto', sans-serif;
+   --background-color: #d4e3fc;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+.infobox {
+    font-size: 18px;
+    margin: 40px 15px;
+}  
+.btn, .addResp {
+   background-color: var(--background-color);
+   color : gray;
+}
+.resbut, .buttonAddResp{
+   display: flex;
+   justify-content: center;
+   margin: 40px 0px;
+}
+.reserve, .addResp {
+    background-color: var(--background-color);
+    border: 1px solid #000000;
+    border-radius: 0.19em;
+    width: 200px;
+    color: gray;
+    padding: 10px;
+    text-align: center; 
+}
+
+.reserve:hover, .btn:hover, .addResp:hover{
+  background-color: #72b6cc;
+  cursor: pointer;
+  color: white;
+}
+
+.reserve:active {
+  box-shadow: none;
+  top: 5px;
+}
+h3 {
+    margin: 30px;
+    padding: 0;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+}
+  #carouselResponces {
+      background-color: rgb(211, 205, 205);
+      text-align: center
+}
+
+.addResponces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.respTitle {
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+}
+#form-status, #my-form-status {
+    font-size: 2rem;
+    color: red;
+}
+.text-field {
+    color: rgba(128, 128, 128, 0.829);
+}
+.weather {
+    background-color: rgb(250, 192, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font: 24px sans-serif;
+    color: rgba(68, 66, 66, 0.692);
+    text-decoration-color: black
+}

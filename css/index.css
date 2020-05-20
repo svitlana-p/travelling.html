@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 
-h1, h2, p, ul {
+h1, h2, p, ul, hr {
     margin: 0;
     padding: 0;
 }
@@ -16,8 +16,7 @@ body {
     max-width: 980px;
     margin: auto;
 }
-h1
-{
+h1 {
     color: red;
     text-align: center
 }
@@ -25,7 +24,7 @@ h1
   font-size: 2rem;
   font-style: italic;
   text-align: center;
- }
+}
 
 header nav .logo  {
     font-family: 'Roboto', cursive;
@@ -35,7 +34,7 @@ header nav .logo  {
     flex-direction: column;
     justify-items: center;
     
-            }
+}
 span {
     color: var(--main-color);
     font-size: 1rem;
@@ -51,18 +50,19 @@ header nav .top-menu {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 19px;
+    padding: 10px;
     background-color: var(--background-color);
     margin: 1px;
-    }
+}
     
 header nav .top-menu li a  {  
     color: var(--main-color);
     text-decoration: none;
     border: 1px solid transparent;
     padding: 0px;
-   }
+}
 
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color);
@@ -71,13 +71,12 @@ header nav .top-menu li a:hover {
     header nav {
         display: flex;
         align-items: center;
-               }
+    }
 }
 @media (min-width: 660px) {
-header nav  {
-    justify-content: space-between;
-}
-
+    header nav  {
+        justify-content: space-between;
+    }
 }
 
 main .banner {
@@ -89,10 +88,10 @@ main .banner {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
-  }
+}
   main .banner .end-button {
       margin-bottom: 150px;
-  }
+}
 main .banner a {
     background-color: var(--background-color);
     border: 1px solid #000000;
@@ -104,9 +103,9 @@ main .banner a {
     position: relative;
     text-decoration: none;
     text-align: center;
-       }
+}
 
-main .banner a:hover {
+main .banner a:hover , .propBut:hover, #submit:hover  {
   background-color: #72b6cc;
   cursor: pointer;
 }
@@ -121,9 +120,11 @@ main .banner a:active {
          display: grid; 
          grid-template-columns:1fr 1fr; 
          align-items: center;
-          }
-    
-   }
+    }
+    .pre-end-button {
+       margin-bottom: 150px; 
+    }
+}
 article {
   position: relative;
   display: flex;
@@ -134,7 +135,7 @@ article {
 main .services-list .service-card img.service-image {
   display: block;
   width: 100%;
-      }
+}
 .service-card h2 {
   display: flex;
   align-items: center; 
@@ -145,21 +146,20 @@ main .services-list .service-card img.service-image {
 .services-list {
         display: grid; 
         grid-template-columns: 1fr;  
-        grid-gap: 25px; }
-
+        grid-gap: 25px; 
+}
 
 @media (min-width: 500px) {
  .services-list {
         grid-template-columns: 1fr 1fr;  
     }
-    
 }
 main .services-list .service-card p {
     margin: 10px;
     display: flex;
     justify-content: center;
 }
-main .services-list .service-card a {
+main .services-list .service-card a, .propose button, #submit {
     background-color: var(--background-color);
     color: #484a4b;
     border: thin solid black;
@@ -168,9 +168,9 @@ main .services-list .service-card a {
     margin: 0px;
     text-decoration: none;
     text-align: center;
-            }
+}
     
-main .services-list .service-card a:hover {
+main .services-list .service-card a:hover{
   background-color: white;
   cursor: pointer;
 }
@@ -179,12 +179,112 @@ main .services-list .service-card a:active {
   box-shadow: none;
   top: 5px;
 }
-
+ @media (min-width: 500px) {
+     main .service-card h2 {
+         font-size: 18px;
+    }
+}
+  @media (min-width: 660px) {
+     main .service-card h2 {
+         font-size: 2rem;
+    }
+}
 .propose p {
     font-size: 18px;
     font-weight: bold;
+    font-style: italic;
     margin: 10px;
+    text-align: center
+}
+.propose label, input {
+    font-size: 16px;
+    text-align: center;   
+    margin: 15px;
+}
+.propose button {
+    padding: 5px;
+    margin: 10px 30px 10px 30px;
+    text-align: center;   
+}
+.propose input {
+    padding: 0px 3px 3px 3px;
+       
 }
 
-   
+.contactUs .text-field, .contactUs p, #submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center
+}
+.contactUs p, .hours {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ourContacts {
+    background-color: #d3e8f3;
+    border: thin solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .cont {
+     margin: 8px;
+}
+.ourContacts p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+@media (min-width: 660px) {
+    .contactInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        grid-gap: 25px; 
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 660px) {
+    .ourContacts {
+    background-color: white;
+    border:none;
+    }
+}
+.weatherTitle {
+     background-color: rgb(203, 204, 204);
+}
+.weather {
+    background-color: rgb(203, 204, 204);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font: 24px sans-serif;
+    color: rgba(204, 0, 0, 0.692);
+    text-decoration-color: black
+}
+.timer-text {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;  
+}
+.timerBack {
+    background-image: url(../img/summer_party.jpg);
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color:red;      
+}
+.timer {
+    margin: 30px;
+    color: black
 }
