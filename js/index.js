@@ -63,4 +63,4 @@ const someQuestions = function () {
     "Залишилися запитання? Телефонуйте!\n+38 099 123 4 567\nМи радо вас проконсультуємо! \nАбо заповнюйте форму зворотнього зв'язку,\nщо знаходиться внизу сторінки\nі ми вам передзвонимо!"
   );
 };
-const timeOut = setTimeout(someQuestions, 30000);
+const timeOut = setTimeout(someQuestions, 90000);
